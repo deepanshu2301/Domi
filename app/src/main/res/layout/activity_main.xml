@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context="com.talentfiver.tcb.texttospeech.liveprivwe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="400sp">
+        <ImageButton
+            android:id="@+id/speak"
+            android:src="@drawable/start"
+            android:layout_marginTop="100sp"
+            android:layout_width="200dp"
+            android:scaleType="centerCrop"
+            android:layout_height="200dp"
+            android:background="@drawable/layout_bg"
+            android:paddingTop="15sp"
+            android:paddingLeft="15sp"
+            android:paddingBottom="15sp"
+            android:text=" start"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:src="@drawable/stop"
+            android:background="@drawable/layout_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" stop"
+            android:layout_gravity="bottom"/>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/write"
+        android:background="@android:color/transparent"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:lines="5"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:maxHeight="250sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/search"
+            android:background="@drawable/layout_bg"
+            android:id="@+id/websearch"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
