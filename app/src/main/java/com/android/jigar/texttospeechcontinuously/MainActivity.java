@@ -29,7 +29,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton speak, stop;
+    ImageButton speak, stop , webcall;
     static EditText textView;
     private SpeechRecognizer sr;
     private static final String TAG = "MyActivity";
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         speak = findViewById(R.id.speak);
         stop = findViewById(R.id.stop);
-
+        webcall = findViewById(R.id.websearch);
         textView = findViewById(R.id.write);
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -77,6 +77,13 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Start Speaking", Toast.LENGTH_SHORT).show();
 
 
+            }
+        });
+
+        webcall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                
             }
         });
     }
