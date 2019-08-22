@@ -5,18 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#BA55D2"
     android:keepScreenOn="true"
     tools:context="com.talentfiver.tcb.texttospeech.liveprivwe">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center"
-        android:layout_height="400sp">
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:text="नमस्कार !"
+            android:textSize="40dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="300dp">
         <ImageButton
             android:id="@+id/speak"
             android:src="@drawable/start"
-            android:layout_marginTop="100sp"
+            android:layout_marginTop="50sp"
             android:layout_width="200dp"
             android:scaleType="centerCrop"
             android:layout_height="200dp"
@@ -35,7 +50,7 @@
             android:layout_height="wrap_content"
             android:text=" stop"
             android:layout_gravity="bottom"/>
-
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -44,21 +59,25 @@
         android:id="@+id/write"
         android:background="@android:color/transparent"
         android:textColor="#000000"
+        android:padding="5sp"
+        android:textAlignment="center"
         android:textSize="25sp"
         android:lines="5"
         android:layout_width="match_parent"
-        android:layout_height="200sp"
+        android:layout_height="150sp"
         android:maxHeight="250sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_gravity="end"
+        android:gravity="center"
         android:layout_height="wrap_content">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:src="@drawable/search"
+            android:layout_gravity="center"
             android:background="@drawable/layout_bg"
             android:id="@+id/websearch"
             android:layout_margin="10sp"

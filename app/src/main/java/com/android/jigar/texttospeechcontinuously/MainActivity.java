@@ -31,6 +31,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ImageButton speak, stop , webcall;
+
     static EditText textView;
     private SpeechRecognizer sr;
     private static final String TAG = "MyActivity";
@@ -82,7 +83,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         webcall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -91,6 +91,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        clearbtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                textView.getText().clear();
+//            }
+//        });
     }
 
     class Listner implements RecognitionListener {
