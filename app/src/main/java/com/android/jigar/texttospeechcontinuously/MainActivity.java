@@ -81,13 +81,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        final WebView myWebView = (WebView) findViewById(R.id.webviewact);
 
 
         webcall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                myWebView.loadUrl("http://www.google.com");
+                Intent intent = new Intent(getBaseContext(),WebActivity.class);
+                startActivity(intent);
             }
         });
     }
