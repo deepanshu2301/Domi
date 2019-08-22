@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),WebActivity.class);
+                intent.putExtra("Data",textView.getText().toString());
                 startActivity(intent);
             }
         });

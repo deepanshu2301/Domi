@@ -7,6 +7,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class WebActivity extends MainActivity {
 
@@ -15,9 +16,8 @@ public class WebActivity extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.webact);
 
-        EditText textresults = findViewById(R.id.write);
-        String search = textresults.toString();
-
+        String search = getIntent().getStringExtra("Data");
+        Toast.makeText(getBaseContext(),""+search.length(),Toast.LENGTH_LONG).show();
         final WebView myWebView = findViewById(R.id.webviewact);
         myWebView.getSettings().setJavaScriptEnabled(true);
         myWebView.loadUrl("https://duckduckgo.com/search.html?prefill="+search);
